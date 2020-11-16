@@ -1,0 +1,48 @@
+/*footer*/
+@font-face {
+ font-family: "Montserrat";
+ src: url("<?php echo get_template_directory_uri();?>/Font/Montserrat/Montserrat-Regular.ttf") format("tff"),
+        url("<?php echo get_template_directory_uri();?>/Font/Montserrat/Montserrat-Regular.ttf") format("tff");
+}
+
+footer {
+  background-color: #C4C4C4;
+}
+
+
+.logo_footer{
+  width: 9%;
+  margin-left: 13%; margin-right: 1%;
+  margin-top: 1.2%; margin-bottom: 1.2%;
+}
+
+.text1{
+  margin-left:13%;
+}
+
+.text1 a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight:lighter ;
+  font-size: 16px;
+}
+
+
+
+footer .nav_footer ul li {
+  color: #FFFFFF; text-decoration: none;
+  margin-left:80%;
+}
+li a {color: #FFFFFF; text-decoration: none; font-family: "Montserrat", sans-serif;
+font-weight:lighter ;
+font-size: 16px;
+}
+
+.tagline {
+  text-align:center;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-weight:lighter ;
+  font-size: 16px;
+}
