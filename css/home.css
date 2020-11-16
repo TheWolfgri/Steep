@@ -1,0 +1,41 @@
+
+/*-------------Section 1-------------------*/
+.Sec_one {
+
+
+}
+.Sec_one p{color: #96A1AE; text-decoration: none; font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-size: 100%;}
+
+.Sec_one div {max-width: 30%; margin-left: 5%;
+margin-top: 8%;}
+
+/*-------------Section 2-------------------*/
+.missions{
+   background-color: #F4F4F4;
+}
+.t_mission {display: inline-block;}
+.tt_mission {display: inline-block;}
+.ttt_mission {display: inline-block; max-width: 30%;}
+
+/*-------------Section 3-------------------*/
+.conferance{
+   background-color: #FFFFFF;
+
+}
+
+
+
+
+/*-------------Section 4-------------------*/
+.Actu{
+   background-color:#F4F4F4;
+}
+
+
+
+/*-------------Section 5-------------------*/
+.partner{
+   background-color: #FFFFFF;
+}

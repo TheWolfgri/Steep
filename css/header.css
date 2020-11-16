@@ -10,16 +10,22 @@ margin-top: 0;
 box-shadow: 0px 8px 12px #aaa; }
 
 .logo {width: 30%;
-margin-left: 10%; margin-right: 1%;
+margin-left: 10%; margin-right: 8%;
 margin-top: 1.2%; margin-bottom: 1.2%;}
 
-header div {display: inline-flex;
+header .center_nav div {display: inline-block;
+vertical-align:middle;
+}
+.nav {min-width: 50%; }
+.nav div{min-width: 100%; }
 
-justify-content: center;
+header .center_nav .nav ul li {display: inline-block;
+   color: #96A1AE; text-decoration: none;
+   margin-right: 2%;
+      margin-left: 2%;
 }
 
 
-header .nav ul li {display: inline-block; color: #96A1AE; text-decoration: none;}
 li a {color: #96A1AE; text-decoration: none; font-family: "Montserrat", sans-serif;
-font-weight: 600;
-font-size: 16px;}
+font-weight: 500;
+font-size: 110%;}
