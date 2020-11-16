@@ -1,4 +1,22 @@
 /*tous ce qui va sur le Header*/
-header {background-color: #FFFFFF;
+@font-face {
+ font-family: "Montserrat";
+ src: url("<?php echo get_template_directory_uri();?>/Font/Montserrat/Montserrat-Regular.ttf") format("tff"),
+        url("<?php echo get_template_directory_uri();?>/Font/Montserrat/Montserrat-Regular.ttf") format("tff");
+}
+header {
+margin-top: 0;
+  background-color: #FFFFFF;
 box-shadow: 0px 8px 12px #aaa; }
-header .nav ul li {display: inline-block;}
+
+.logo {width: 30%;
+margin-left: 10%; margin-right: 1%;
+margin-top: 1.2%; margin-bottom: 1.2%;}
+
+header div {display: inline-block;}
+
+
+header .nav ul li {display: inline-block; color: #96A1AE; text-decoration: none;}
+li a {color: #96A1AE; text-decoration: none; font-family: "Montserrat", sans-serif;
+font-weight: 600;
+font-size: 16px;}
