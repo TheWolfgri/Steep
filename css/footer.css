@@ -34,7 +34,7 @@ footer .nav_footer ul li {
   color: #FFFFFF; text-decoration: none;
   margin-left:80%;
 }
-li a {color: #FFFFFF; text-decoration: none; font-family: "Montserrat", sans-serif;
+.nav_footer ul li a {color: #FFFFFF; text-decoration: none; font-family: "Montserrat", sans-serif;
 font-weight:lighter ;
 font-size: 16px;
 }
