@@ -35,8 +35,16 @@ height: auto;
   max-height: 60%;
   min-height: 50%;
   max-width: 100%;
+  margin-top: 0;
    background-color: #F4F4F4;
 }
+.wrap {margin-top: 4%;}
+.missions h1 {
+  font-family: "Montserrat", sans-serif;
+ font-size: 300%; font-weight: 600; color: #62C4DD;
+
+}
+
 
 .missions div {display: inline-block; max-width: 40%; margin-left: 8%;}
 .t_mission {display: inline-block;}

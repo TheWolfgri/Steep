@@ -25,6 +25,7 @@
 <!--------------------------------------------------------------->
 
 <section class="missions">
+  <div class="wrap">
 
   <h1><?php the_field('mission'); ?></h1>
 
@@ -43,6 +44,7 @@
 
       <p><?php the_field('paragraphe_section_two'); ?></p>
     </div>
+  </div>
 </section>
 
 

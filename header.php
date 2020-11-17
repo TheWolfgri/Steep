@@ -23,19 +23,33 @@ $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 </head>
 
 <body <?php body_class() ?>>
-
+<script type="text/javascript"> Show(){}
+ Show_menu(){}
+</script>
   <header>
     <div class="center_nav">
+
       <div class="logo">
 
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <img src="<?php echo $image[0]; ?>" alt="Logo" class="logo">
               </a>
       </div>
+      <div class="nav_menu" onclick="Show_menu()">
+        <div class="nav">
+          <div>
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) );    ?>
+          </div>
+        </div>
 
-      <div class="nav">
-          <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) );  get_search_form();  ?>
-      </div>
+        <div id="svgSearch" onclick="Show()">
+          <img src="<?php echo get_template_directory_uri();?>/images/rechercher.svg" alt="search" class="loupe_svg">
+            <div id="search"  style="display:none;">
+            <?php get_search_form(); ?>
+          </div>
+        </div>
+    </div>
+
   </div>
 
   </header>
