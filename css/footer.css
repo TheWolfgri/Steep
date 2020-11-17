@@ -7,63 +7,68 @@
 
 footer {
   background-color: #C4C4C4;
+  height:310px;
 }
 
 
 .logo_footer{
+  position: relative;
   width: 9%;
-  margin-left: 13%; margin-right: 1%;
-  margin-top: 1.2%; margin-bottom: 1.2%;
+  margin-left: 13%;
+  margin-right: 1%;
+  margin-top: 2%;
+
 }
 
-.text1{
+.text1 img{
+  position: relative;
+  width: 8%;
   margin-left:13%;
+  margin-top:1%;
 }
 
-.text1 a {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-weight:lighter ;
-  font-size: 16px;
-}
-
-footer .nav_footer ul li {
+.nav_footer ul li {
   color: #FFFFFF; text-decoration: none;
   margin-left:80%;
+  margin-bottom:1%;
 }
-.nav_footer ul li a {color: #FFFFFF; text-decoration: none; font-family: "Montserrat", sans-serif;
-font-weight:600 ;
-font-size: 16px;
+.nav_footer ul li a {
+  color: #FFFFFF; text-decoration: none; font-family: "Montserrat", sans-serif;
+  font-weight:600 ;
+  font-size: 18px;
+
+
 }
 .nav_footer ul:before{
-  margin-left:90%;
+  margin-left:89%;
   bottom: 1%;
   position:absolute;
   left:0;
   content:'';
   display: block;
   width:2px;
-  height:52px;
+  height:95px;
   background-color:#FFFFFF;
 }
 .nav_footer ul{
   position:relative;
 }
 
+
 .tagline {
   text-align:center;
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
   font-weight:600 ;
-  font-size: 16px;
+  font-size: 18px;
+  margin-top:2%;
 }
 .tagline p{
   position:relative;
 }
 .tagline p:before{
-  margin-left:37%;
-  margin-top: 0.5%;
+  margin-left:38%;
+  margin-top: 0.4%;
   position:absolute;
   left:0;
   content:'';
@@ -71,4 +76,5 @@ font-size: 16px;
   width:50px;
   height:3px;
   background-color:#FFFFFF;
+
 }
