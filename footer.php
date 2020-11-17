@@ -11,7 +11,6 @@
       <?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
     </div>
 
-
     <div class="tagline">
       <p>Un site conçue par l'agence Bzzz</p>
     </div>
