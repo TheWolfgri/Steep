@@ -1,23 +1,46 @@
 
 /*-------------Section 1-------------------*/
 .Sec_one {
-
-
+display: block;
+min-height: 50%;
+max-width: 100%;
 }
-.Sec_one p{color: #96A1AE; text-decoration: none; font-family: "Montserrat", sans-serif;
-font-weight: 400;
-font-size: 100%;}
 
-.Sec_one div {max-width: 30%; margin-left: 5%;
-margin-top: 8%;}
+.s1_first {display: inline-flex; justify-content: space-between; align-items:center;}
+.s1_bloc_2 {
+max-width: 50%;}
+
+.Sec_one p{color: #96A1AE; text-decoration: none; font-family: "Montserrat", sans-serif;
+font-weight: 200;
+font-size: 128%;
+line-height: 35px;}
+
+p strong {font-weight: 700;}
+
+.Sec_one .s1_bloc_1 {max-width: 40%; margin-left: 8%; display: inline-flex;
+justify-content: space-between;
+}
+.Sec_one .s1_bloc_2 {max-width: 40%; display: inline-flex;
+justify-content: space-between;
+}
+
+.image_so {
+height: auto;
+
+ }
 
 /*-------------Section 2-------------------*/
 .missions{
+  display: block;
+  max-height: 60%;
+  min-height: 50%;
+  max-width: 100%;
    background-color: #F4F4F4;
 }
+
+.missions div {display: inline-block; max-width: 40%; margin-left: 8%;}
 .t_mission {display: inline-block;}
 .tt_mission {display: inline-block;}
-.ttt_mission {display: inline-block; max-width: 30%;}
 
 /*-------------Section 3-------------------*/
 .conferance{
