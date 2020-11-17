@@ -28,21 +28,42 @@ footer {
   font-size: 16px;
 }
 
-
-
 footer .nav_footer ul li {
   color: #FFFFFF; text-decoration: none;
   margin-left:80%;
 }
 .nav_footer ul li a {color: #FFFFFF; text-decoration: none; font-family: "Montserrat", sans-serif;
-font-weight:lighter ;
+font-weight:600 ;
 font-size: 16px;
+}
+
+.nav_footer #vertical_line{
+    border-left: 2px solid #FFFFFF;
+    height: 20px;
+    position: relative;
+    left: 90%;
 }
 
 .tagline {
   text-align:center;
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
-  font-weight:lighter ;
+  font-weight:600 ;
   font-size: 16px;
+}
+.tagline p{
+  position:relative;
+}
+.tagline p:before{
+  margin-left:37%;
+  margin-top: 0.5%;
+  position:absolute;
+  left:0;
+  content:'';
+  display: block;
+  width:50px;
+  height:3px;
+  background-color:#FFFFFF;
+
+
 }
