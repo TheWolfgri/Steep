@@ -16,6 +16,15 @@ function add_theme_scripts() {
   	'header-text' => array( 'site-title', 'site-description' ),
   ) );
 
+	function wpc_theme_support() {
+		add_theme_support('custom-logo_bas', array(
+			'flex-height' => true,
+			'flex-width'  => true,
+		));
+	}
+	add_action('after_setup_theme','wpc_theme_support');
+
+
 
   function register_my_menu() {
 	register_nav_menu('header-menu',__( 'Header Menu' ));

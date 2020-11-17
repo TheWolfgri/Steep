@@ -3,6 +3,8 @@
 <head <?php language_attributes(); ?>>
 <?php wp_head() ?>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title><?php bloginfo('name');?> - <?php bloginfo('description');?></title>
 
 <?php
@@ -12,6 +14,7 @@ $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/reset.css"></style>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/header.css"></style>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/home.css"></style>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/footer.css"></style>
 
 
   <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
