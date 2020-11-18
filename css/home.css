@@ -3,7 +3,10 @@ margin-left: 10%;
 margin-right: 10%;
 }
 
-
+body h1 {
+  font-family: "Montserrat", sans-serif;
+ font-size: 300%; font-weight: 600; color: #62C4DD;
+}
 
 
 /*-------------Section 1-------------------*/
@@ -40,11 +43,6 @@ height: auto;
   max-width: 100%;
   margin-top: 0;
    background-color: #F4F4F4;
-}
-
-body h1 {
-  font-family: "Montserrat", sans-serif;
- font-size: 300%; font-weight: 600; color: #62C4DD;
 }
 
 .Flex {display: inline-flex;  justify-content: space-between; align-items:center;}

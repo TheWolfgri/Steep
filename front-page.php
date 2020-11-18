@@ -1,7 +1,6 @@
 <?php require('header.php');?>
 
 
-
 <section class="Sec_one">
   <div class="wrap">
   <div class="Flex">
@@ -10,10 +9,11 @@
 
         <div>
         <p><?php the_field('text_sect_one'); ?></p>
-
+<!--button-->
         <a href="" class="button_link_0">
-        <div class="button_0"><p class="button_txt_0">EN SAVOIR PLUS</p></div>
+          <div class="button_0"><p class="button_txt_0">EN SAVOIR PLUS</p></div>
         </a>
+<!--button-->
       </div>
 
 
@@ -78,7 +78,7 @@
 <section class="partner">
   <div class="wrap">
 
-  <h1><?php the_field('partenaire_title'); ?></h1>  
+  <h1><?php the_field('partenaire_title'); ?></h1>
   </div>
 </section>
 <!--------------------------------------------------------------->

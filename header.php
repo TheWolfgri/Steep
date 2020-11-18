@@ -23,11 +23,10 @@ $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 </head>
 
 <body <?php body_class() ?>>
-<script type="text/javascript"> Show(){}
- Show_menu(){}
-</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="<?php echo get_template_directory_uri();?>/js/menu.js"></script>
   <header>
-    <div class="center_nav">
+    <div class="center_nav wrap ">
 
       <div class="logo">
 
@@ -35,21 +34,23 @@ $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
                     <img src="<?php echo $image[0]; ?>" alt="Logo" class="logo">
               </a>
       </div>
-      <div class="nav_menu" onclick="Show_menu()">
-        <div class="nav">
+      <div class="nav_menu">
+        <div class="nav"  onclick="show_menu()">
           <div>
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) );    ?>
           </div>
         </div>
 
-        <div id="svgSearch" onclick="Show()">
+        <div id="svgSearch" onclick="show()">
           <img src="<?php echo get_template_directory_uri();?>/images/rechercher.svg" alt="search" class="loupe_svg">
             <div id="search"  style="display:none;">
             <?php get_search_form(); ?>
           </div>
         </div>
-    </div>
+  </div>
 
   </div>
+
+
 
   </header>

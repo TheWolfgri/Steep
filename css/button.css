@@ -1,11 +1,13 @@
 .button_link_0 div { margin-left: 0; display: block;
   margin-top: 4%;
 }
+.button_txt_0:hover{cursor: pointer;}
 a:link
 {
 
  text-decoration:none;
 }
+
 .button_link_0 .button_p_0 {  margin-top: 10%;  }
 .button_0 p{ margin-top: auto; color: #FFFFFF; font-size: 90%;  text-decoration: none;font-weight: 500;}
 .button_0 {

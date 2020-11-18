@@ -45,7 +45,6 @@ box-shadow: 0px 8px 12px #aaa; }
 
 
 .logo {width: 32%;
-margin-left: 6%; margin-right: 1%;
 margin-top: 1.2%; margin-bottom: 1.2%;}
 
 
@@ -64,7 +63,7 @@ header .center_nav .nav .menu {display: inline-flex;
    color: #96A1AE; text-decoration: none;
    margin-right: 2%;
       margin-left: 2%;
-      min-width: 90%;
+      min-width: 105%;
       flex: auto
 }
 header .center_nav .nav ul li {
@@ -85,12 +84,17 @@ li a {
 color: #96A1AE; text-decoration: none;
 font-family: "Montserrat", sans-serif;
 font-weight: 500;
-font-size: 110%;}
+font-size: 105%;}
 
 .sub-menu {display: none;}
 
 #search {position: absolute;
-left: 60%;
+left: 70%;
+top: 110%;
 }
-#svgSearch{flex: auto; max-width: 20%;}
-.loupe_svg {max-width: 15%; min-width: 15%;}
+
+.screen-reader-text{font-family: "Montserrat", sans-serif; color: #96A1AE; }
+#svgSearch{flex: auto; max-width: 20%; margin-left: 8%;}
+.loupe_svg {max-width: 25%; min-width: 20%;}
+
+.loupe_svg:hover{cursor: pointer;}
