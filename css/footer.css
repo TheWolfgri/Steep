@@ -7,9 +7,7 @@
 
 footer {
   background-color: #C4C4C4;
-  height:310px;
 }
-
 
 .logo_footer img{
   position: relative;
@@ -26,12 +24,14 @@ footer {
   color: #FFFFFF; text-decoration: none;
   margin-bottom:1%;
   text-align: right;
+  margin-right: 1%;
 }
 .nav_footer ul li a {
   color: #FFFFFF; text-decoration: none; font-family: "Montserrat", sans-serif;
   font-weight:600 ;
   font-size: 18px;
 }
+/*--------vertical line-------*/
 
 .nav_footer ul{
   position:relative;
@@ -39,12 +39,12 @@ footer {
 .nav_footer ul:before{
   bottom: 1%;
   position:absolute;
-  left:0;
   content:'';
   display: block;
   width:2px;
-  height:95px;
+  height:75px;
   background-color:#FFFFFF;
+  right:0;
 }
 
 .tagline {
@@ -59,14 +59,16 @@ footer {
 .tagline p{
   position:relative;
 }
+/*--------vertical line-------*/
+
 .tagline p:before{
-  margin-left: 40%;
+
   margin-top: 0.4%;
   position:absolute;
-  left:0;
+  left:30%;
   content:'';
   display: block;
   width:50px;
-  height:3px;
+  height:2px;
   background-color:#FFFFFF;
 }
