@@ -52,21 +52,45 @@ width: 100%;
 .Flex {display: inline-flex;  justify-content: space-between; align-items:center;}
 
 .t_mission {min-width: 50%;}
-.tt_mission {min-width: 50%;}
-.content_mission{display: block;
+.tt_mission {
+max-width: 45%;
 }
-.margin {margin-top: 5%;}
+.content_mission{display: block;}
+
+.margin {margin-top: 8%;
+margin-bottom: 8%;
+}
 .tt_mission p {
-font-family: "Montserrat", sans-serif;
 font-size: 1.5vw;
 font-weight: 400;
 }
 .tt_mission p strong {
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   line-height: 35px;
 }
 
+.menu_section_2{
+background-color: #FFFFFF;
+box-shadow: 0 0 20px #62C4DD;
+  color: #96A1AE;
+font-size: 1.5vw;
+font-weight: bold;
+border-radius: 12px;
+width: 90%;
+height: 4.2vw;
+display: -webkit-flex;
+display: flex;
+align-items: center;
+ justify-content: space-between;
+}
+.menu_section_2 p {
+  margin-left: 5%;
+}
+.Bltarget {margin-right: 5%;}
+
+.menu_section_2:hover {cursor: pointer;}
+
+#menu1 {margin-bottom: 5%;}
 /*-------------Section 3-------------------*/
 .conferance{
    background-color: #FFFFFF;

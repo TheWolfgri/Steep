@@ -45,11 +45,14 @@
 
       <div class="t_mission">
 
-        <div class="menu1">
-          <?php the_field('menu1'); ?>
+        <div id="menu1" class="menu_section_2" onclick="MenuO_Sect()">
+          <p><?php the_field('menu1'); ?></p>
+          <img src="<?php echo get_template_directory_uri();?>/images/assets/FlecheBleue.svg" alt=">" id="Tar_B_1" class="Bltarget">
         </div>
-        <div class="menu2">
-          <?php the_field('menu2'); ?>
+
+        <div id="menu2" class="menu_section_2" onclick="MenuT_Sect()">
+        <p>  <?php the_field('menu2'); ?></p>
+        <img src="<?php echo get_template_directory_uri();?>/images/assets/FlecheBleue.svg" alt=">" id="Tar_B_2" class="Bltarget" style="display: none;">
         </div>
 
       </div>

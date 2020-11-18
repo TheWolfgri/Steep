@@ -29,7 +29,7 @@
 }
 
 
-
+body {font-family: "Montserrat", sans-serif;}
 
 
 
@@ -58,7 +58,8 @@ align-items:center;
 min-width: 50%;
 }
 
-header .center_nav .nav .menu {display: inline-flex;
+header .center_nav .nav .menu {
+  display: inline-flex;
   justify-content: space-between; align-items:center;
    color: #96A1AE; text-decoration: none;
    margin-right: 2%;
@@ -82,7 +83,7 @@ header .center_nav .nav ul li {
 
 li a {
 color: #96A1AE; text-decoration: none;
-font-family: "Montserrat", sans-serif;
+
 font-weight: 600;
 font-size: 1.05vw;}
 
@@ -93,7 +94,7 @@ left: 70%;
 top: 110%;
 }
 
-.screen-reader-text{font-family: "Montserrat", sans-serif; color: #96A1AE; }
+.screen-reader-text{ color: #96A1AE; }
 #svgSearch{flex: auto; max-width: 20%; margin-left: 8%;}
 .loupe_svg {max-width: 25%; min-width: 20%;}
 
