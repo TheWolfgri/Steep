@@ -44,7 +44,7 @@ box-shadow: 0px 8px 12px #aaa; }
 
 
 
-.logo {width: 32%;
+.logo {width: 35%;
 margin-top: 1.2%; margin-bottom: 1.2%;}
 
 
@@ -83,8 +83,8 @@ header .center_nav .nav ul li {
 li a {
 color: #96A1AE; text-decoration: none;
 font-family: "Montserrat", sans-serif;
-font-weight: 500;
-font-size: 105%;}
+font-weight: 600;
+font-size: 1.05vw;}
 
 .sub-menu {display: none;}
 

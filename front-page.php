@@ -34,7 +34,12 @@
 
   <div class="wrap">
 
-    <h1><?php the_field('mission'); ?></h1>
+
+    <div>
+      <img src="<?php the_field('logo_section_2')?>" class="logo_section">
+      <h1><?php the_field('mission'); ?></h1>
+    </div>
+
 
     <div class="Flex margin">
 
@@ -50,8 +55,8 @@
       </div>
 
       <div class="tt_mission">
-        <p class="p1_mission"><?php the_field('paragraphe_section_two'); ?></p>
-        <p class="p2_mission" style="display: none;"><?php the_field('paragraphe_section_two_1'); ?></p>
+        <p id="p1_mission"><?php the_field('paragraphe_section_two'); ?></p>
+        <p id="p2_mission" style="display: none;"><?php the_field('paragraphe_section_two_1'); ?></p>
       </div>
   </div>
       </div>
@@ -64,6 +69,7 @@
 
 <section class="conferance">
   <div class="wrap">
+    <img src="<?php the_field('logo_section_3')?>" class="logo_section">
     <h1><?php the_field('conferance_title'); ?></h1>
   </div>
 
@@ -71,14 +77,27 @@
 <!--------------------------------------------------------------->
 <section class="Actu">
   <div class="wrap">
+    <img src="<?php the_field('logo_section_4')?>" class="logo_section">
     <h1><?php the_field('actu_title'); ?></h1>
   </div>
 </section>
 <!--------------------------------------------------------------->
 <section class="partner">
   <div class="wrap">
-
+<img src="<?php the_field('logo_section_5')?>" class="logo_section">
   <h1><?php the_field('partenaire_title'); ?></h1>
+
+  <div class="logo_partenairs">
+    <div class="Flex logo_partners">
+    <?php
+     $images = get_field('partenairs_logo');
+     foreach ($images as $logo): ?>
+      <div>   <img src="<?php echo $logo ?>" class="logo_partners_img"></div> <?php
+    endforeach;
+    ?>
+
+  </div>
+  </div>
   </div>
 </section>
 <!--------------------------------------------------------------->

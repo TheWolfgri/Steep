@@ -1,5 +1,6 @@
 
 var int_0 = -1;
+
 function show() {
 
 if (int_0==-1){
@@ -12,4 +13,3 @@ else {  int_0=int_0*-1
 }
 
     function Show_menu(){}
->

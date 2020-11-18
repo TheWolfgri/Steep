@@ -5,14 +5,19 @@ margin-right: 10%;
 
 body h1 {
   font-family: "Montserrat", sans-serif;
- font-size: 300%; font-weight: 600; color: #62C4DD;
+ font-size: 3vw; font-weight: 600; color: #62C4DD;
+ display: inline-block;
+ margin-top: 5%;
+ margin-left: 2%;
 }
-
+.logo_section {display: inline-block;
+vertical-align: bottom;
+width: 4%;}
 
 /*-------------Section 1-------------------*/
 .Sec_one {
 display: block;
-min-height: 50%;
+min-height: 0.5vw;
 max-width: 100%;
 }
 
@@ -20,8 +25,8 @@ max-width: 100%;
 max-width: 50%;}
 
 .Sec_one p{color: #96A1AE; text-decoration: none; font-family: "Montserrat", sans-serif;
-font-weight: 200;
-font-size: 128%;
+font-weight: 400;
+font-size: 1.28vw;
 line-height: 35px;}
 
 p strong {font-weight: 700;}
@@ -32,13 +37,12 @@ p strong {font-weight: 700;}
 }
 .image_so {
 height: auto;
-
+width: 100%;
  }
 
 /*-------------Section 2-------------------*/
 .missions{
   display: block;
-  max-height: 60%;
   min-height: 50%;
   max-width: 100%;
   margin-top: 0;
@@ -52,6 +56,16 @@ height: auto;
 .content_mission{display: block;
 }
 .margin {margin-top: 5%;}
+.tt_mission p {
+font-family: "Montserrat", sans-serif;
+font-size: 1.5vw;
+font-weight: 400;
+}
+.tt_mission p strong {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 35px;
+}
 
 /*-------------Section 3-------------------*/
 .conferance{
@@ -72,4 +86,8 @@ height: auto;
 /*-------------Section 5-------------------*/
 .partner{
    background-color: #FFFFFF;
+}
+.logo_partners{width: 100%;
+margin-top: 4%;
+margin-bottom: 4%;
 }
