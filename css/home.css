@@ -41,6 +41,9 @@ width: 100%;
  }
 
 /*-------------Section 2-------------------*/
+
+
+
 .missions{
   display: block;
   min-height: 50%;
@@ -54,11 +57,13 @@ width: 100%;
 .t_mission {min-width: 50%;}
 .tt_mission {
 max-width: 45%;
+  min-height: 20%;
 }
 .content_mission{display: block;}
 
 .margin {margin-top: 8%;
 margin-bottom: 8%;
+min-height: 18vw;
 }
 .tt_mission p {
 font-size: 1.5vw;
@@ -67,8 +72,9 @@ font-weight: 400;
 .tt_mission p strong {
   font-weight: 600;
   line-height: 35px;
-}
 
+}
+/*------menu au choix -----*/
 .menu_section_2{
 background-color: #FFFFFF;
 box-shadow: 0 0 20px #62C4DD;
@@ -81,7 +87,7 @@ height: 4.2vw;
 display: -webkit-flex;
 display: flex;
 align-items: center;
- justify-content: space-between;
+justify-content: space-between;
 }
 .menu_section_2 p {
   margin-left: 5%;
@@ -90,7 +96,29 @@ align-items: center;
 
 .menu_section_2:hover {cursor: pointer;}
 
+#menu1:hover {box-shadow: 0 0 28px #62C4DD; font-size: 1.6vw;}
+#menu2:hover {box-shadow: 0 0 28px #62C4DD; font-size: 1.6vw;}
 #menu1 {margin-bottom: 5%;}
+
+#p1_mission{  animation-duration: 1s;
+  animation-name: come;}
+#p2_mission {  animation-duration: 1s;
+  animation-name: come;}
+  @keyframes come {
+    from {
+      opacity: 0%;
+      margin-left: 5%;
+      width: 100%;
+    }
+
+    to {
+opacity: 100%;
+margin-left: 0%;
+width: 100%;
+    }
+  }
+
+
 /*-------------Section 3-------------------*/
 .conferance{
    background-color: #FFFFFF;
