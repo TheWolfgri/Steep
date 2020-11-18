@@ -1,8 +1,7 @@
 <footer >
   <section class="wrap">
-      <div class="logo_footer">
-        <img src="<?php echo get_template_directory_uri();?>/images/Logo_blanc.svg"
-        alt="logo de steep en blanc">
+      <div class="logo">
+        <img src="<?php echo $image[0]; ?>" alt="Logo" class="logo">
       </div>
 
       <div class="link">
