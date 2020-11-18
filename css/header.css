@@ -35,9 +35,10 @@ body {font-family: "Montserrat", sans-serif;}
 
 
 header {
-  position: relative;
+ position: relative;
 margin-top: 0;
   background-color: #FFFFFF;
+  z-index: 2;
 box-shadow: 0px 8px 12px #aaa; }
 
 

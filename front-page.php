@@ -2,7 +2,7 @@
 
 
 <section class="Sec_one">
-  <div class="wrap">
+  <div class="wrap_2">
   <div class="Flex">
 
     <div class="s1_bloc_1">
@@ -18,8 +18,7 @@
 
 
       </div>
-        <div class="s1_bloc_2">
-          <?php get_field('image_sect_one');?>
+        <div class="s1_bloc_2" >
           <img src="<?php the_field('image_sect_one'); ?>" class="image_so" />
         </div>
     </div>
@@ -82,6 +81,34 @@
   <div class="wrap">
     <img src="<?php the_field('logo_section_4')?>" class="logo_section">
     <h1><?php the_field('actu_title'); ?></h1>
+<div class="Flex margin">
+  <?php
+  $POSTS = get_posts('numberposts=3');//nb posts par pages
+  foreach ($POSTS as $post):setup_postdata($post);// boucle qui charge les articles
+   ?>
+   <div class="actu_article ">
+     <div class="wrap_articles">
+            <article>
+                <h2><a href="<?php echo get_the_permalink() ?>"> <?php the_title(); ?> </a></h2>
+
+                <div class="content">
+                    <?php the_content(); ?>
+                <div>
+
+            </article>
+          </div>
+    </div>
+<?php
+  endforeach;
+  unset($post); // Détruit la référence sur le dernier élément
+?>
+
+
+
+
+
+</div>
+
   </div>
 </section>
 <!--------------------------------------------------------------->
@@ -95,7 +122,7 @@
     <?php
      $images = get_field('partenairs_logo');
      foreach ($images as $logo): ?>
-      <div>   <img src="<?php echo $logo ?>" class="logo_partners_img"></div> <?php
+      <div class="partner_div">   <img src="<?php echo $logo ?>" class="logo_partners_img"></div> <?php
     endforeach;
     ?>
 

@@ -14,8 +14,9 @@ body h1 {
 vertical-align: bottom;
 width: 4%;}
 
-/*-------------Section 1-------------------*/
+/*------------------------------------------------------------------Section 1---------------------------------------------------------*/
 .Sec_one {
+  background-color: #FFFFFF;
 display: block;
 min-height: 0.5vw;
 max-width: 100%;
@@ -27,20 +28,26 @@ max-width: 50%;}
 .Sec_one p{color: #96A1AE; text-decoration: none; font-family: "Montserrat", sans-serif;
 font-weight: 400;
 font-size: 1.28vw;
-line-height: 35px;}
+line-height: 2vw;}
 
 p strong {font-weight: 700;}
 
-.Sec_one .s1_bloc_1 {max-width: 50%;
+.Sec_one .s1_bloc_1 {
+  max-width: 45%;
 }
-.Sec_one .s1_bloc_2 {max-width: 50%;
+.Sec_one .s1_bloc_2 {
+  max-width: 50%;
 }
 .image_so {
+    z-index: 1;
+clip-path: polygon(15% 0, 100% 0, 100% 100%, 3% 100%);
 height: auto;
 width: 100%;
  }
+.wrap_2{ margin-left: 10%;}
 
-/*-------------Section 2-------------------*/
+
+/*------------------------------------------------------------------Section 2---------------------------------------------*/
 
 
 
@@ -63,7 +70,7 @@ max-width: 45%;
 
 .margin {margin-top: 8%;
 margin-bottom: 8%;
-min-height: 18vw;
+min-height: 20vw;
 }
 .tt_mission p {
 font-size: 1.5vw;
@@ -71,7 +78,7 @@ font-weight: 400;
 }
 .tt_mission p strong {
   font-weight: 600;
-  line-height: 35px;
+  line-height: 2.5vw;
 
 }
 /*------menu au choix -----*/
@@ -83,7 +90,7 @@ font-size: 1.5vw;
 font-weight: bold;
 border-radius: 12px;
 width: 90%;
-height: 4.2vw;
+height: 4.4vw;
 display: -webkit-flex;
 display: flex;
 align-items: center;
@@ -92,7 +99,7 @@ justify-content: space-between;
 .menu_section_2 p {
   margin-left: 5%;
 }
-.Bltarget {margin-right: 5%;}
+.Bltarget {margin-right: 5%; width: 1.5vw;}
 
 .menu_section_2:hover {cursor: pointer;}
 
@@ -119,7 +126,7 @@ width: 100%;
   }
 
 
-/*-------------Section 3-------------------*/
+/*-------------------------------------------------------------------------Section 3-------------------------------------------------------*/
 .conferance{
    background-color: #FFFFFF;
 
@@ -128,18 +135,32 @@ width: 100%;
 
 
 
-/*-------------Section 4-------------------*/
+/*--------------------------------------------------------------------------Section 4---------------------------------------------*/
 .Actu{
    background-color:#F4F4F4;
 }
+.actu_article{background-color: #FFFFFF;
+min-width: 28%;
+max-width: 28%;
+max-height: 35vw;
+min-height: 35vw;
+border-radius: 12px;
+}
+.wrap_articles {margin-left: 5%;
+margin-right: 5%;}
+article h2{color: black; margin-top: 8%;}
+article figure img {width: 50%;
+  height: auto;
 
+}
 
-
-/*-------------Section 5-------------------*/
+/*--------------------------------------------------------------------------Section 5---------------------------------------------------*/
 .partner{
    background-color: #FFFFFF;
 }
+
 .logo_partners{width: 100%;
 margin-top: 4%;
 margin-bottom: 4%;
 }
+.logo_partners_img {width: 9vw;}
