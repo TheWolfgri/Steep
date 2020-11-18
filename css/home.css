@@ -1,8 +1,6 @@
 .wrap {
-margin-top: 4%;
-margin-left: 15%;
+margin-left: 10%;
 margin-right: 10%;
-margin-bottom: 4%;
 }
 
 
@@ -15,8 +13,7 @@ min-height: 50%;
 max-width: 100%;
 }
 
-.s1_first {display: inline-flex; justify-content: space-between; align-items:center;}
-.s1_bloc_2 {
+.s1_bloc_2 {flex-wrap: nowrap;
 max-width: 50%;}
 
 .Sec_one p{color: #96A1AE; text-decoration: none; font-family: "Montserrat", sans-serif;
@@ -26,13 +23,10 @@ line-height: 35px;}
 
 p strong {font-weight: 700;}
 
-.Sec_one .s1_bloc_1 {max-width: 50%; display: inline-flex;
-justify-content: space-between;
+.Sec_one .s1_bloc_1 {max-width: 50%;
 }
-.Sec_one .s1_bloc_2 {max-width: 50%; display: inline-flex;
-justify-content: space-between;
+.Sec_one .s1_bloc_2 {max-width: 50%;
 }
-
 .image_so {
 height: auto;
 
@@ -48,16 +42,18 @@ height: auto;
    background-color: #F4F4F4;
 }
 
-.missions h1 {
+body h1 {
   font-family: "Montserrat", sans-serif;
  font-size: 300%; font-weight: 600; color: #62C4DD;
-
 }
 
+.Flex {display: inline-flex;  justify-content: space-between; align-items:center;}
 
-.missions div {display: inline-block; max-width: 40%;}
-.t_mission {display: inline-block;}
-.tt_mission {display: inline-block;}
+.t_mission {min-width: 50%;}
+.tt_mission {min-width: 50%;}
+.content_mission{display: block;
+}
+.margin {margin-top: 5%;}
 
 /*-------------Section 3-------------------*/
 .conferance{
