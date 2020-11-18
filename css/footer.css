@@ -2,7 +2,30 @@
 @font-face {
  font-family: "Montserrat";
  src: url("<?php echo get_template_directory_uri();?>/Font/Montserrat/Montserrat-Regular.ttf") format("tff"),
-      url("<?php echo get_template_directory_uri();?>/Font/Montserrat/Montserrat-Regular.ttf") format("tff");
+        url("<?php echo get_template_directory_uri();?>/Font/Montserrat/Montserrat-Regular.ttf") format("tff");
+        font-weight: 400;
+
+}
+@font-face {
+ font-family: "Montserrat";
+ src: url("<?php echo get_template_directory_uri();?>/Font/Montserrat/Montserrat-Medium.ttf") format("tff"),
+        url("<?php echo get_template_directory_uri();?>/Font/Montserrat/Montserrat-Medium.ttf") format("tff");
+        font-weight: 500;
+
+}
+@font-face {
+ font-family: "Montserrat";
+ src: url("<?php echo get_template_directory_uri();?>/Font/Montserrat/Montserrat-SemiBold.ttf") format("tff"),
+        url("<?php echo get_template_directory_uri();?>/Font/Montserrat/Montserrat-SemiBold.ttf") format("tff");
+        font-weight: 600;
+
+}
+@font-face {
+ font-family: "Montserrat";
+ src: url("<?php echo get_template_directory_uri();?>/Font/Montserrat/Montserrat-Bold.ttf") format("tff"),
+        url("<?php echo get_template_directory_uri();?>/Font/Montserrat/Montserrat-Bold.ttf") format("tff");
+        font-weight: 700;
+
 }
 
 footer {
@@ -52,7 +75,7 @@ footer {
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
   font-weight:600 ;
-  font-size: 18px;
+  font-size: 1.05vw;
   margin-top:4%;
 }
 

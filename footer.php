@@ -5,7 +5,7 @@
       </div>
 
       <div class="link">
-        <a href="#"><img src="<?php echo get_template_directory_uri();?>/images/comprendre_et_agir.svg" alt="logo comprendre et agir"></a>
+        <a href="wordpress/comprendre-et-agir/"><img src="<?php echo get_template_directory_uri();?>/images/comprendre_et_agir.svg" alt="logo comprendre et agir"></a>
       </div>
 
     <div class="nav_footer">
