@@ -5,11 +5,11 @@
 <section class="Sec_one">
   <div class="s1_first">
     <div class="s1_bloc_1">
-      <div>
+      <div class="wrap">
         <p><?php the_field('text_sect_one'); ?></p>
 
         <a href="" class="button_link_0">
-          <p class="button_p_0"><div class="button_0"><p class="button_txt_0">EN SAVOIR PLUS</p></div></p>
+        <div class="button_0"><p class="button_txt_0">EN SAVOIR PLUS</p></div>
         </a>
       </div>
 

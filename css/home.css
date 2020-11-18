@@ -17,7 +17,7 @@ line-height: 35px;}
 
 p strong {font-weight: 700;}
 
-.Sec_one .s1_bloc_1 {max-width: 40%; margin-left: 8%; display: inline-flex;
+.Sec_one .s1_bloc_1 {max-width: 40%; display: inline-flex;
 justify-content: space-between;
 }
 .Sec_one .s1_bloc_2 {max-width: 40%; display: inline-flex;
@@ -38,7 +38,12 @@ height: auto;
   margin-top: 0;
    background-color: #F4F4F4;
 }
-.wrap {margin-top: 4%;}
+.wrap {
+margin-top: 4%;
+margin-left: 8%;
+margin-right: 8%;
+margin-bottom: 4%;
+}
 .missions h1 {
   font-family: "Montserrat", sans-serif;
  font-size: 300%; font-weight: 600; color: #62C4DD;
