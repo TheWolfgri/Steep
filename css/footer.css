@@ -9,7 +9,10 @@ footer {
   background-color: #C4C4C4;
 }
 
-
+.logo_footer img{
+  margin-top: 2%;
+  width: 9%;
+}
 
 .link img{
   position: relative;
@@ -62,7 +65,7 @@ footer {
 
   margin-top: 0.4%;
   position:absolute;
-  left:30%;
+  left:33%;
   content:'';
   display: block;
   width:50px;

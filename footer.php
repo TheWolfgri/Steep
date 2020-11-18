@@ -1,7 +1,7 @@
 <footer >
   <section class="wrap">
-      <div class="logo">
-        <img src="<?php echo $image[0]; ?>" alt="Logo" class="logo">
+      <div class="logo_footer">
+        <img src="<?php echo get_template_directory_uri();?>/images/logo_blanc.svg?>">
       </div>
 
       <div class="link">
