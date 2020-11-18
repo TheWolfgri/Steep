@@ -5,6 +5,64 @@ p{
   font-weight:400;
 }
 
+a{
+  font-family: "Montserrat", sans-serif;
+  font-size:1.05vw;
+  font-weight:400;
+  color:#62C4DD;
+}
 .contact_text p{
-  padding-top:3%;
+  margin-top:3%;
+}
+
+.info{
+  padding-top:5%;
+}
+
+.mail_conf {
+    background-color: #FFFFFF;
+    box-shadow: 2px 0px 30px rgba(98, 196, 221, 0.25);
+    color: #96A1AE;
+    font-size: 1.5vw;
+    font-weight: bold;
+    border-radius: 10px;
+    align-items: center;
+    width:696px;
+    height:117px;
+}
+
+.mail_team {
+    background-color: #FFFFFF;
+    box-shadow: 2px 0px 30px rgba(98, 196, 221, 0.25);
+    color: #96A1AE;
+    font-size: 1.5vw;
+    font-weight: bold;
+    border-radius: 10px;
+    align-items: center;
+    width:696px;
+    height:117px;
+}
+
+.join_team {
+    background-color: #FFFFFF;
+    box-shadow: 2px 0px 30px rgba(98, 196, 221, 0.25);
+    color: #96A1AE;
+    font-size: 1.5vw;
+    font-weight: bold;
+    border-radius: 10px;
+    align-items: center;
+    width:696px;
+    height:117px;
+}
+
+.other {
+    background-color: #FFFFFF;
+    box-shadow: 2px 0px 30px rgba(98, 196, 221, 0.25);
+    color: #96A1AE;
+    font-size: 1.5vw;
+    font-weight: bold;
+    border-radius: 10px;
+    align-items: center;
+    width:696px;
+    height:117px;
 }
