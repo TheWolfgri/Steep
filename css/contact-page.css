@@ -1,1 +1,10 @@
+p{
+  font-family: "Montserrat", sans-serif;
+  font-size:1.05vw;
+  color: #96A1AE;
+  font-weight:400;
+}
 
+.contact_text p{
+  padding-top:3%;
+}
