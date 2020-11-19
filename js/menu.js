@@ -11,7 +11,10 @@ else {  int_0=int_0*-1
 
 
 }
-function Show_menu(){}
+function Show_menu(){
+
+  document.getElementByClass(".sub-menu").style.display = "block";
+}
 
 function MenuO_Sect() {document.getElementById("p1_mission").style.display = "block";
 document.getElementById("p2_mission").style.display = "none";

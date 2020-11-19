@@ -88,7 +88,57 @@ color: #96A1AE; text-decoration: none;
 font-weight: 600;
 font-size: 1.05vw;}
 
-.sub-menu {display: none;}
+
+/*--------------------*/
+.sub-menu {  position:absolute;
+     z-index:999;
+max-width:12vw;
+min-width:10vw;
+ float:left;
+     display:none;
+     background-color: #FFFFFF;
+     border-radius: 12px;
+}
+.sub-menu li {margin-top: 10%; margin-left: 5%; margin-right: 5%;}
+.sub-menu li a {font-size: 1vw; font-weight: 400; }
+.sub-menu li:first-child {margin-top: 12%;}
+.sub-menu li:last-child {margin-bottom: 15%;}
+/* Sous-menu 2 */
+.menu li:hover > a,
+.menu .sub-menu ul :hover > a{
+color: grey;
+}
+.menu li:hover > ul{display:block;}
+.menu .sub-menu:hover {display:block;}
+.menu ul li.current_page_item > a,
+.menu ul li.current-menu-ancestor > a,
+.menu ul li.current-menu-item > a,
+.menu ul li.current-menu-parent > a{
+    background-color:#FFFFFF;
+}
+
+.sub-menu {  animation-duration: 0.5s;
+ animation-name: menu_come;}
+ @keyframes menu_come {
+   from {
+     opacity: 0%;
+     margin-top: -5px;
+    min-width: 10vw;
+    max-width: 12vw;
+   }
+
+   to {
+opacity: 100%;
+margin-top: 0px;
+  min-width: 10vw;
+  max-width: 12vw;
+   }
+ }
+
+/*-------------------*/
+
+
+
 
 #search {position: absolute;
 left: 70%;
@@ -96,7 +146,7 @@ top: 110%;
 }
 
 .screen-reader-text{ color: #96A1AE; }
-#svgSearch{flex: auto; max-width: 20%; margin-left: 8%;}
-.loupe_svg {max-width: 25%; min-width: 20%;}
+#svgSearch{flex: auto; max-width: 8%; margin-left: 5%;}
+.loupe_svg {max-width: 40%; float: right;}
 
 .loupe_svg:hover{cursor: pointer;}
