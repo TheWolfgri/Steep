@@ -1,7 +1,6 @@
 .button_link_0 div { margin-left: 0; display: block;
-  margin-top: 8%;
 }
-.button_txt_0:hover{cursor: pointer; box-shadow: 0 0 28px #62C4DD44;  font-size: 1vw; }
+.button_0:hover{cursor: pointer; box-shadow: 0 0 28px #62C4DD44;  font-size: 1vw; }
 
 a:link
 {
@@ -26,6 +25,6 @@ font-family: "Montserrat", sans-serif;
 text-align: center;
 background-color: #62C4DD;
   min-width: 25%;
-max-width: 25%;
+max-width: 100%;
 min-height: 2.2vw;
 }

@@ -10,9 +10,11 @@
         <div>
         <p><?php the_field('text_sect_one'); ?></p>
 <!--button-->
+<div class="button">
         <a href="" class="button_link_0">
           <div class="button_0"><p class="button_txt_0">EN SAVOIR PLUS</p></div>
         </a>
+  </div>
 <!--button-->
       </div>
 
