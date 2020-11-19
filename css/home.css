@@ -140,19 +140,31 @@ width: 100%;
    background-color:#F4F4F4;
 }
 .actu_article{background-color: #FFFFFF;
+  margin-top: 10%;
+  margin-bottom: 10%;
 min-width: 28%;
-max-width: 28%;
+max-width: 78%;
 max-height: 35vw;
 min-height: 35vw;
 border-radius: 12px;
+margin-left: auto;
+margin-right: auto;
 }
-.wrap_articles {margin-left: 5%;
-margin-right: 5%;}
-article h2{color: black; margin-top: 8%;}
-article figure img {width: 50%;
+.wrap_articles {
+display: flex;
+  margin-left: 9%;
+margin-right: 9%;}
+article {margin-top: 9%;}
+article h2 a{color: black;
+font-weight: 800;
+}
+article h2{margin-bottom: 8%;}
+
+article figure img {width: 120%;
   height: auto;
 
 }
+.category_article{margin-bottom: 5%;}
 
 /*--------------------------------------------------------------------------Section 5---------------------------------------------------*/
 .partner{

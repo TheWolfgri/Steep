@@ -77,39 +77,65 @@
 
 </section>
 <!--------------------------------------------------------------->
+<script>
+	new Splide( '.splide' ).mount();
+</script>
+<script>
+document.addEventListener( 'DOMContentLoaded', function () {
+	new Splide( '#card-slider', {
+		perPage    : 3,
+		breakpoints: {
+			600: {
+				perPage: 1,
+			}
+		}
+	} ).mount();
+} );
+</script>
+
+
 <section class="Actu">
-  <div class="wrap">
-    <img src="<?php the_field('logo_section_4')?>" class="logo_section">
-    <h1><?php the_field('actu_title'); ?></h1>
-<div class="Flex margin">
-  <?php
-  $POSTS = get_posts('numberposts=3');//nb posts par pages
-  foreach ($POSTS as $post):setup_postdata($post);// boucle qui charge les articles
-   ?>
-   <div class="actu_article ">
-     <div class="wrap_articles">
-            <article>
-                <h2><a href="<?php echo get_the_permalink() ?>"> <?php the_title(); ?> </a></h2>
+<div class="wrap">
+  <img src="<?php the_field('logo_section_4')?>" class="logo_section">
+  <h1><?php the_field('actu_title'); ?></h1>
 
-                <div class="content">
-                    <?php the_content(); ?>
-                <div>
+<div class="splide" id="card-slider">
+  <div class="splide__slider">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <?php
+        $POSTS = get_posts('numberposts=5');//nb posts par pages
+        foreach ($POSTS as $post):setup_postdata($post);// boucle qui charge les articles
+         ?>
+         <li class="splide__slide">
+         <div class="actu_article ">
+           <div class="wrap_articles">
+                  <article>
+                      <h2><a href="<?php echo get_the_permalink() ?>"> <?php the_title(); ?> </a></h2>
+                      <div class="category_article"><?php the_category(); ?></div>
+                      <div class="content">
+                          <?php the_excerpt(); ?>
+                      </div>
+                      <!--button-->
+                              <a href="" class="button_link_0">
+                                <div class="button_0"><p class="button_txt_0">EN SAVOIR PLUS</p></div>
+                              </a>
+                      <!--button-->
 
-            </article>
+                  </article>
+            </div>
           </div>
+          </li>
+      <?php
+        endforeach;
+        unset($post); // Détruit la référence sur le dernier élément
+      ?></ul>
     </div>
-<?php
-  endforeach;
-  unset($post); // Détruit la référence sur le dernier élément
-?>
-
-
-
+  </div>
+</div>
 
 
 </div>
-
-  </div>
 </section>
 <!--------------------------------------------------------------->
 <section class="partner">
