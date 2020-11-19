@@ -69,17 +69,6 @@
 
 <!--------------------------------------------------------------->
 
-<section class="conferance">
-  <div class="wrap">
-    <img src="<?php the_field('logo_section_3')?>" class="logo_section">
-    <h1><?php the_field('conferance_title'); ?></h1>
-  </div>
-
-</section>
-<!--------------------------------------------------------------->
-<script>
-	new Splide( '.splide' ).mount();
-</script>
 <script>
 document.addEventListener( 'DOMContentLoaded', function () {
 	new Splide( '#card-slider', {
@@ -94,12 +83,77 @@ document.addEventListener( 'DOMContentLoaded', function () {
 </script>
 
 
+
+
+<section class="conferance">
+  <div class="wrap">
+    <img src="<?php the_field('logo_section_3')?>" class="logo_section">
+    <h1><?php the_field('conferance_title'); ?></h1>
+
+
+    <div class="splide" id="card-slider">
+      <div class="splide__slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <?php
+            $POSTS = get_posts('numberposts=5');//nb posts par pages
+            foreach ($POSTS as $post):setup_postdata($post);// boucle qui charge les articles
+             ?>
+             <li class="splide__slide">
+             <div class="actu_conf">
+               <div  style="display: table; width: 100%;">
+                      <article>
+                        <div class="wrap_conf">
+                          <div class="bloc_img_conf"><?php the_post_thumbnail(); ?></div>
+                          <div class="category_conf"><?php the_category(); ?></div>
+
+                          <div class="h2_conf"><h2><a href="<?php echo get_the_permalink() ?>"> <?php the_title(); ?> </a></h2></div>
+                          <div class="author_conf"><?php the_author(); ?></div>
+                          <div class="date_conf"><?php the_date('d/m/Y'); ?></div>
+                        </div>
+                      </article>
+                </div>
+              </div>
+              </li>
+          <?php
+      endforeach;
+      unset($post); // Détruit la référence sur le dernier élément
+    ?></ul>
+  </div>
+</div>
+</div>
+<div class="Bl_link">
+<div class="BlLine"></div>
+<div><img src="<?php echo get_template_directory_uri();?>/images/assets/arrow_right.svg" alt=">" class="Bltarget"> </div>
+<div>  <a href=""><?php the_field('conf_link'); ?></a></div>
+</div>
+
+  </div>
+
+</section>
+<!--------------------------------------------------------------->
+
+<script>
+document.addEventListener( 'DOMContentLoaded', function () {
+	new Splide( '#card-slider-o', {
+		perPage    : 3,
+		breakpoints: {
+			600: {
+				perPage: 1,
+			}
+		}
+	} ).mount();
+} );
+</script>
+
+
+
 <section class="Actu">
   <div class="wrap">
     <img src="<?php the_field('logo_section_4')?>" class="logo_section">
     <h1><?php the_field('actu_title'); ?></h1>
 
-        <div class="splide" id="card-slider">
+        <div class="splide" id="card-slider-o">
           <div class="splide__slider">
             <div class="splide__track">
               <ul class="splide__list">

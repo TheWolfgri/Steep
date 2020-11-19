@@ -131,16 +131,65 @@ width: 100%;
    background-color: #FFFFFF;
 
 }
+.actu_conf{
+box-shadow: 0 0 15px #62C4DD66;
+  background-color: #FFFFFF;
+  margin-top: 10%;
+  margin-bottom: 10%;
+min-width: 28%;
+max-width: 78%;
+max-height: 22vw;
+min-height: 22vw;
+border-radius: 12px;
+margin-left: auto;
+margin-right: auto;
+}
+.splide {margin-bottom: 3%;}
+.wrap_conf {
+  margin-left: 9%;
+margin-right: 9%;}
 
+article {margin-top: 9%;}
 
+/*titre d'article*/
 
+article .h2_conf h2 a{color: black;
+font-weight: 500;
+font-size: 1vw;
+}
+
+.h2_conf{min-height: 4vw;}
+
+/*image*/
+.bloc_img_conf{min-height: 10vw; max-height: 12vw;}
+article figure img {width: 100%;
+  height: auto;
+}
+
+article .bloc_img_conf img{width: 100%; height: auto;
+border-radius: 12px;
+}
+
+/*categorie*/
+.category_conf{margin-bottom: 5%;}
+/*author*/
+.author_conf{font-size: 1vw;
+font-weight: 400;
+color: #96A1AE;
+}
+/*--date--*/
+.date_conf{
+margin-right: auto;
+  font-size: 1vw;
+font-weight: 400;
+float: right;}
 
 /*--------------------------------------------------------------------------Section 4---------------------------------------------*/
 .Actu{
    background-color:#F4F4F4;
 }
 .actu_article{
-box-shadow: 0 0 15px #62C4DD66; 
+box-shadow: 0 0 15px #62C4DD66;
   background-color: #FFFFFF;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -188,7 +237,7 @@ font-size: 0.95vw;
 /*adapter le bouton*/
 .article_button{min-width: 50%; max-width: 50%;}
   #button_footer{max-width: 100%;}
-    #button_footer p{font-weight: 400;font-size: 0.9vw; }
+    #button_footer p{font-weight: 400;   display: inline;}
 
 
 /*---------------*/

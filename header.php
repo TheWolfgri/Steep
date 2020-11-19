@@ -44,10 +44,11 @@ $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 
         <div id="svgSearch" onclick="show()">
           <img src="<?php echo get_template_directory_uri();?>/images/rechercher.svg" alt="search" class="loupe_svg">
-            <div id="search"  style="display:none;">
-            <?php get_search_form(); ?>
-          </div>
+
         </div>
+        <div id="search"  style="display:none;">
+        <?php get_search_form(); ?>
+      </div>
   </div>
 
   </div>
