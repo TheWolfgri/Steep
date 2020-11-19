@@ -76,6 +76,9 @@ a{
     border-radius: 10px;
     align-items: center;
 }
+.other p{
+  margin-top:3%;
+}
 
 /*---- info adress -----*/
 .adress_title h1{

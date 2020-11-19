@@ -47,7 +47,7 @@
         <div>
           <p><?php the_field('contact_info_5')?></p>
           <a href="mailto:<?php the_field('contact_mail_3')?>"><?php the_field('contact_mail_1')?></a>
-          <a href="tel:<?php the_field('contact_num')?>"><?php the_field('contact_num')?></a>
+          <p><a href="tel:<?php the_field('contact_num')?>"><?php the_field('contact_num')?></a></p>
         </div>
       </div>
   </section><!--fin section contact-->
@@ -66,7 +66,10 @@
       </div>
 
       <div class="adress_text">
-        <p><?php the_field('contact_adresse_text')?></p>
+        <p><?php the_field('contact_adresse_location_1')?></p>
+        <p><?php the_field('contact_adresse_location_2')?></p>
+        <p><?php the_field('contact_adresse_location_3')?></p>
+        <p><?php the_field('contact_adresse_location_4')?></p>
       </div>
 
   </section><!-- fin section adress -->

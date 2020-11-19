@@ -1,0 +1,168 @@
+[
+    {
+        "key": "group_5fb66bc161269",
+        "title": "Contact_adresse",
+        "fields": [
+            {
+                "key": "field_5fb66f6593319",
+                "label": "contact_adresse_picto",
+                "name": "contact_adresse_picto",
+                "type": "image",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5fb66cd18916e",
+                "label": "contact_adresse_title",
+                "name": "contact_adresse_title",
+                "type": "text",
+                "instructions": "adresse titre",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5fb66c268916d",
+                "label": "contact_adresse_maps",
+                "name": "contact_adresse_maps",
+                "type": "image",
+                "instructions": "image google maps localisation",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5fb66e098916f",
+                "label": "contact_adresse_location_1",
+                "name": "contact_adresse_location_1",
+                "type": "text",
+                "instructions": "INIRIA Grenoble - Rhônes Alpes (ville et régions)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "INIRIA Grenoble - Rhônes Alpes",
+                "placeholder": "INIRIA Grenoble - Rhônes Alpes",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5fb6d4c2140cd",
+                "label": "contact_adresse_location_2",
+                "name": "contact_adresse_location_2",
+                "type": "text",
+                "instructions": "655 Avenue de l’Europe (adresse)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "655 Avenue de l’Europe",
+                "placeholder": "655 Avenue de l’Europe",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5fb6d4e3140ce",
+                "label": "contact_adresse_location_3",
+                "name": "contact_adresse_location_3",
+                "type": "text",
+                "instructions": "38330 Montbonnot (code postal)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "38330 Montbonnot",
+                "placeholder": "38330 Montbonnot",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5fb6d617140cf",
+                "label": "contact_adresse_location_4",
+                "name": "contact_adresse_location_4",
+                "type": "text",
+                "instructions": "France (pays)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "France",
+                "placeholder": "France",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "101"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]
