@@ -3,8 +3,28 @@
  require('header.php');?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/contact-page.css">
-<section class="contact_section">
   <div class="wrap">
+
+<!-- adress -->
+
+    <section class="adress">
+
+        <div class="adress_title">
+          <img src="<?php the_field('contact_adresse_picto')?>" class="picto_title">
+          <h1><?php the_field('contact_adresse_title'); ?></h1>
+        </div>
+
+        <div class="adress_maps">
+          <img src="<?php the_field('contact_adresse_maps')?>" class="maps">
+        </div>
+
+        <div class="adress_text">
+          <p><?php the_field('contact_adresse_text')?></p>
+        </div>
+
+    </section><!-- fin section adress -->
+
+<!-- contact -->
 
     <div class="contact_title">
       <img src="<?php the_field('contact_picto')?>" class="picto_title">
@@ -14,7 +34,6 @@
     <div class="contact_text">
       <p><?php the_field('contact_text')?></p>
     </div>
-
 
   <section class="info">
 
@@ -47,11 +66,10 @@
       <div>
         <p><?php the_field('contact_info_5')?></p>
         <a  href="mailto:<?php the_field('contact_mail_3')?>"><?php the_field('contact_mail_1')?></a>
-        <a href="#"><?php the_field('contact_num')?></a>
+        <a href="tel:<?php the_field('contact_num')?>"><?php the_field('contact_num')?></a>
       </div>
     </div>
 
-</section>
-    </div>
-</section>
+  </section><!--fin section info_box -->
+  </div><!-- fin div wrap-->
 <?php require('footer.php');?>

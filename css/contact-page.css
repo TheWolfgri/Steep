@@ -15,10 +15,19 @@ a{
   margin-top:3%;
 }
 
+/*---- info adress -----*/
+.adress_title{
+  
+}
+
+
+/*--------info contact------*/
+
 .info{
   padding-top:5%;
   width: 48vw;
 }
+
 .info_box{
   padding:30px 45px;
   display: flex;
@@ -29,7 +38,6 @@ a{
 
 .info_box div{
   padding-left: 8px;
-
 }
 
 .mail_conf {
@@ -50,7 +58,6 @@ a{
     font-weight: bold;
     border-radius: 10px;
     align-items: center;
-
 }
 
 .join_team {
