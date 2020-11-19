@@ -1,0 +1,25 @@
+.contenu {margin-top: 1.2%;
+line-height: 2vw;
+min-height: 400px;}
+
+p {font-weight: 400;
+font-size: 1.2vw;
+color: #96A1AE;
+margin-bottom: 2.5%;
+}
+p strong {color: black;}
+#first_of_page{margin-left: 0;
+  margin-bottom: 5%;
+}
+h1 {font-weight: 700;
+color: #62C4DD;}
+h2 {font-weight: 600;
+  font-size: 1.8vw;
+margin-bottom: 4%;
+margin-top: 2%;
+}
+h3 {font-weight: 500;
+margin-bottom: 2.5%;
+}
+
+a {color: #62C4DD; }
