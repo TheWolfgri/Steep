@@ -17,6 +17,19 @@ a{
 
 .info{
   padding-top:5%;
+  width: 48vw;
+}
+.info_box{
+  padding:30px 45px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin:35px 0;
+}
+
+.info_box div{
+  padding-left: 8px;
+
 }
 
 .mail_conf {
@@ -27,8 +40,6 @@ a{
     font-weight: bold;
     border-radius: 10px;
     align-items: center;
-    width:696px;
-    height:117px;
 }
 
 .mail_team {
@@ -39,8 +50,7 @@ a{
     font-weight: bold;
     border-radius: 10px;
     align-items: center;
-    width:696px;
-    height:117px;
+
 }
 
 .join_team {
@@ -51,8 +61,6 @@ a{
     font-weight: bold;
     border-radius: 10px;
     align-items: center;
-    width:696px;
-    height:117px;
 }
 
 .other {
@@ -63,6 +71,4 @@ a{
     font-weight: bold;
     border-radius: 10px;
     align-items: center;
-    width:696px;
-    height:117px;
 }
