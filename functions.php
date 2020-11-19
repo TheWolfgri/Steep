@@ -39,4 +39,6 @@ function wpc_mime_types($mimes) {
 }
 add_filter('upload_mimes', 'wpc_mime_types');
 
+
+add_theme_support( 'post-thumbnails' );
 ?>

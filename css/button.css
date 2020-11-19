@@ -1,7 +1,7 @@
 .button_link_0 div { margin-left: 0; display: block;
   margin-top: 8%;
 }
-.button_txt_0:hover{cursor: pointer;}
+.button_txt_0:hover{cursor: pointer; box-shadow: 0 0 28px #62C4DD; }
 a:link
 {
 
@@ -9,12 +9,12 @@ a:link
 }
 
 .button_link_0 .button_p_0 {  margin-top: 12%;  }
-.button_0 p{ margin-top: auto; color: #FFFFFF; font-size: 0.9vw;  text-decoration: none;font-weight: 600;}
+.button_0 p{ margin-top: auto; color: #FFFFFF; font-size: 0.9vw;  text-decoration: none;font-weight: 600; margin: auto;}
 .button_0 {
 
   margin-left: 0;
 border-radius: 20px;
-margin-top: auto; margin-bottom: auto;
+margin: auto;
 font-family: "Montserrat", sans-serif;
 text-align: center;
 background-color: #62C4DD;

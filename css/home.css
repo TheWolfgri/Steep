@@ -139,7 +139,9 @@ width: 100%;
 .Actu{
    background-color:#F4F4F4;
 }
-.actu_article{background-color: #FFFFFF;
+.actu_article{
+box-shadow: 0 0 15px #62C4DD66; 
+  background-color: #FFFFFF;
   margin-top: 10%;
   margin-bottom: 10%;
 min-width: 28%;
@@ -150,21 +152,57 @@ border-radius: 12px;
 margin-left: auto;
 margin-right: auto;
 }
+.splide {margin-bottom: 3%;}
 .wrap_articles {
-display: flex;
   margin-left: 9%;
 margin-right: 9%;}
-article {margin-top: 9%;}
-article h2 a{color: black;
-font-weight: 800;
-}
-article h2{margin-bottom: 8%;}
 
+article {margin-top: 9%;}
+
+/*titre d'article*/
+
+article h2 a{color: black;
+font-weight: 900;
+font-size: 1.3vw;
+}
+
+.h2_article{min-height: 4vw;}
+
+/*image*/
+.bloc_img_article{min-height: 12vw; max-height: 12vw;}
 article figure img {width: 120%;
   height: auto;
-
 }
+article img{width: 100%; height: auto;}
+
+/*categorie*/
 .category_article{margin-bottom: 5%;}
+
+/*contenu*/
+.content {color:#96A1AE;
+font-weight: 300;
+min-height: 10vw;
+line-height: 1.5vw;
+font-size: 0.95vw;
+}
+/*adapter le bouton*/
+.article_button{min-width: 50%; max-width: 50%;}
+  #button_footer{max-width: 100%;}
+    #button_footer p{font-weight: 400;font-size: 0.9vw; }
+
+
+/*---------------*/
+
+.Bl_link {display: inline-flex;
+  margin-bottom: 4.5%;
+  min-width: 50%;
+   align-items:center;}
+
+.Bl_link div{margin-right: 0.5%;}
+.Bl_link div a {color: #62C4DD;}
+.Bl_link .BlLine {margin-right: 4%;}
+.BlLine { background-color: #62C4DD; width: 2.5px; height: 2vw;min-height: 2vw; margin-top: -0.5%;}
+.Bl_link div img {width: 1.5vw; vertical-align: middle;}
 
 /*--------------------------------------------------------------------------Section 5---------------------------------------------------*/
 .partner{

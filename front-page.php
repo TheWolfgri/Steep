@@ -95,47 +95,59 @@ document.addEventListener( 'DOMContentLoaded', function () {
 
 
 <section class="Actu">
-<div class="wrap">
-  <img src="<?php the_field('logo_section_4')?>" class="logo_section">
-  <h1><?php the_field('actu_title'); ?></h1>
+  <div class="wrap">
+    <img src="<?php the_field('logo_section_4')?>" class="logo_section">
+    <h1><?php the_field('actu_title'); ?></h1>
 
-<div class="splide" id="card-slider">
-  <div class="splide__slider">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <?php
-        $POSTS = get_posts('numberposts=5');//nb posts par pages
-        foreach ($POSTS as $post):setup_postdata($post);// boucle qui charge les articles
-         ?>
-         <li class="splide__slide">
-         <div class="actu_article ">
-           <div class="wrap_articles">
-                  <article>
-                      <h2><a href="<?php echo get_the_permalink() ?>"> <?php the_title(); ?> </a></h2>
-                      <div class="category_article"><?php the_category(); ?></div>
-                      <div class="content">
-                          <?php the_excerpt(); ?>
-                      </div>
-                      <!--button-->
-                              <a href="" class="button_link_0">
-                                <div class="button_0"><p class="button_txt_0">EN SAVOIR PLUS</p></div>
-                              </a>
-                      <!--button-->
+        <div class="splide" id="card-slider">
+          <div class="splide__slider">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <?php
+                $POSTS = get_posts('numberposts=5');//nb posts par pages
+                foreach ($POSTS as $post):setup_postdata($post);// boucle qui charge les articles
+                 ?>
+                 <li class="splide__slide">
+                 <div class="actu_article ">
+                   <div  style="display: table; width: 100%;">
+                          <article>
+                            <div class="wrap_articles">
+                              <div class="h2_article"><h2><a href="<?php echo get_the_permalink() ?>"> <?php the_title(); ?> </a></h2></div>
+                              <div class="category_article"><?php the_category(); ?></div>
+                            </div>
 
-                  </article>
-            </div>
-          </div>
-          </li>
-      <?php
-        endforeach;
-        unset($post); // Détruit la référence sur le dernier élément
-      ?></ul>
+                            <div class="bloc_img_article"><?php the_post_thumbnail(); ?></div>
+
+                            <div class="wrap_articles">
+                              <div class="content">
+                                  <?php the_excerpt(); ?>
+                              </div>
+                            <div class="article_button">
+                              <!--button-->
+                                      <a href="<?php echo get_the_permalink() ?>" class="button_link_0" >
+                                        <div class="button_0" id="button_footer"><p class="button_txt_0">Lire la suite</p></div>
+                                      </a>
+                              <!--button-->
+                            </div>
+                            </div>
+                          </article>
+                    </div>
+                  </div>
+                  </li>
+              <?php
+          endforeach;
+          unset($post); // Détruit la référence sur le dernier élément
+        ?></ul>
+      </div>
     </div>
   </div>
+<div class="Bl_link">
+  <div class="BlLine"></div>
+  <div><img src="<?php echo get_template_directory_uri();?>/images/assets/arrow_right.svg" alt=">" class="Bltarget"> </div>
+    <div>  <a href=""><?php the_field('actu_link'); ?></a></div>
 </div>
 
-
-</div>
+  </div>
 </section>
 <!--------------------------------------------------------------->
 <section class="partner">
