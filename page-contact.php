@@ -46,7 +46,7 @@
         <img src="<?php the_field('contact_picto_4')?>" class="picto_info">
         <div>
           <p><?php the_field('contact_info_5')?></p>
-          <a  href="mailto:<?php the_field('contact_mail_3')?>"><?php the_field('contact_mail_1')?></a>
+          <a href="mailto:<?php the_field('contact_mail_3')?>"><?php the_field('contact_mail_1')?></a>
           <a href="tel:<?php the_field('contact_num')?>"><?php the_field('contact_num')?></a>
         </div>
       </div>
