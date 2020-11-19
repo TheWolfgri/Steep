@@ -11,25 +11,22 @@ a{
   font-weight:400;
   color:#62C4DD;
 }
-.contact_text p{
+/*text contact*/
+.contact_text p
+{
   margin-top:3%;
 }
 
-/*---- info adress -----*/
-.adress_title{
-  
+.all {
+  display:flex;
+  justify-content: space-between;
 }
-
 
 /*--------info contact------*/
 
-.info{
-  padding-top:5%;
-  width: 48vw;
-}
 
 .info_box{
-  padding:30px 45px;
+  padding:20px 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -37,7 +34,7 @@ a{
 }
 
 .info_box div{
-  padding-left: 8px;
+  padding-left: 14px;
 }
 
 .mail_conf {
@@ -78,4 +75,26 @@ a{
     font-weight: bold;
     border-radius: 10px;
     align-items: center;
+}
+
+/*---- info adress -----*/
+.adress_title h1{
+  margin-top: 8%;
+}
+
+.adress_maps{
+  margin-top: 20%;
+}
+
+.adress_text {
+  background-color: #FFFFFF;
+  box-shadow: 2px 0px 30px rgba(98, 196, 221, 0.25);
+  color: #96A1AE;
+  font-size: 1.5vw;
+  font-weight: bold;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
+  padding:20px 20px;
 }
