@@ -15,6 +15,7 @@ $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/header.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/home.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/footer.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/footer_responsive.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/button.css">
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
