@@ -12,7 +12,8 @@ p strong {color: black;}
   margin-bottom: 5%;
 }
 h1 {font-weight: 700;
-color: #62C4DD;}
+color: #62C4DD;
+line-height: 2.8vw;}
 h2 {font-weight: 600;
   font-size: 1.8vw;
 margin-bottom: 4%;
