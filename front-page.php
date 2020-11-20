@@ -48,12 +48,12 @@
 
         <div id="menu1" class="menu_section_2" onclick="MenuO_Sect()">
           <p><?php the_field('menu1'); ?></p>
-          <img src="<?php echo get_template_directory_uri();?>/images/assets/FlecheBleue.svg" alt=">" id="Tar_B_1" class="Bltarget">
+          <img src="<?php echo get_template_directory_uri();?>/images/Assets/FlecheBleue.svg" alt=">" id="Tar_B_1" class="Bltarget">
         </div>
 
         <div id="menu2" class="menu_section_2" onclick="MenuT_Sect()">
         <p>  <?php the_field('menu2'); ?></p>
-        <img src="<?php echo get_template_directory_uri();?>/images/assets/FlecheBleue.svg" alt=">" id="Tar_B_2" class="Bltarget" style="display: none;">
+        <img src="<?php echo get_template_directory_uri();?>/images/Assets/FlecheBleue.svg" alt=">" id="Tar_B_2" class="Bltarget" style="display: none;">
         </div>
 
       </div>
@@ -144,7 +144,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
 </div>
 <div class="Bl_link">
 <div class="BlLine"></div>
-<div><img src="<?php echo get_template_directory_uri();?>/images/assets/arrow_right.svg" alt=">" class="Bltarget"> </div>
+<div><img src="<?php echo get_template_directory_uri();?>/images/Assets/arrow_right.svg" alt=">" class="Bltarget"> </div>
 <div>  <a href=""><?php the_field('conf_link'); ?></a></div>
 </div>
 
@@ -190,7 +190,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
                               <div class="category_article"><?php the_category(); ?></div>
                             </div>
 
-                            <div class="bloc_img_article"><?php the_post_thumbnail(); ?></div>
+                            <div class="bloc_img_article"><?php the_post_thumbnail('category-thumb'); ?></div>
 
                             <div class="wrap_articles">
                               <div class="content">
@@ -217,7 +217,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
   </div>
 <div class="Bl_link">
   <div class="BlLine"></div>
-  <div><img src="<?php echo get_template_directory_uri();?>/images/assets/arrow_right.svg" alt=">" class="Bltarget"> </div>
+  <div><img src="<?php echo get_template_directory_uri();?>/images/Assets/arrow_right.svg" alt=">" class="Bltarget"> </div>
     <div>  <a href=""><?php the_field('actu_link'); ?></a></div>
 </div>
 

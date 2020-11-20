@@ -103,6 +103,22 @@ min-width:10vw;
 .sub-menu li a {font-size: 1vw; font-weight: 400; }
 .sub-menu li:first-child {margin-top: 12%;}
 .sub-menu li:last-child {margin-bottom: 15%;}
+
+.menu li>a::after
+                    {
+                        content: "";
+                        width: 9px;
+                        height : 16px;
+                        margin-left: 9px;
+                        background-image: url("../images/Assets/arrow.svg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        transform: rotate(90deg);
+                    }
+
+
+
+
 /* Sous-menu 2 */
 .menu li:hover > a,
 .menu .sub-menu ul :hover > a{

@@ -40,5 +40,24 @@ function wpc_mime_types($mimes) {
 add_filter('upload_mimes', 'wpc_mime_types');
 
 
-add_theme_support( 'post-thumbnails' );
+/*add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 100, 10, true );*/
+
+function wpdocs_setup_theme() {
+    add_theme_support( 'post-thumbnails' );
+    set_post_thumbnail_size( 50, 50 );
+		add_image_size ('category-thumb', 300, 10); // 300 pixels de large (et hauteur illimitée)
+}
+add_action( 'after_setup_theme', 'wpdocs_setup_theme' );
+
+/*SIZZ limit */
+function wpdocs_custom_excerpt_length( $length ) {
+    return 32;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+
+/*312 pixels par 167*/
+
+
 ?>
