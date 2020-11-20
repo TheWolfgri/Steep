@@ -99,25 +99,43 @@ document.addEventListener( 'DOMContentLoaded', function () {
           <ul class="splide__list">
             <?php
             $POSTS = get_posts('numberposts=5');//nb posts par pages
-            foreach ($POSTS as $post):setup_postdata($post);// boucle qui charge les articles
-             ?>
-             <li class="splide__slide">
-             <div class="actu_conf">
-               <div  style="display: table; width: 100%;">
-                      <article>
-                        <div class="wrap_conf">
-                          <div class="bloc_img_conf"><?php the_post_thumbnail(); ?></div>
-                          <div class="category_conf"><?php the_category(); ?></div>
 
-                          <div class="h2_conf"><h2><a href="<?php echo get_the_permalink() ?>"> <?php the_title(); ?> </a></h2></div>
-                          <div class="author_conf"><?php the_author(); ?></div>
-                          <div class="date_conf"><?php the_date('d/m/Y'); ?></div>
-                        </div>
+
+                foreach ($POSTS as $post):setup_postdata($post);// boucle qui charge les articles
+
+                        $conf_tags = get_the_tags();
+                        if ($conf_tags) {
+                            foreach($conf_tags as $tag) {
+                              $names=$tag->name;
+
+                          if ($names=='Conférence'){
+                            $author = get_the_author();
+                             echo "
+
+                            <li class='splide__slide'>
+                            <div class='actu_conf'>
+                             <div  style='display: table; width: 100%;'>
+
+                             <article>
+                             <div class='wrap_conf'>
+
+                     <div class='bloc_img_conf'>",the_post_thumbnail(),"</div>
+                      <div class='category_conf'>",the_category(),"</div>
+
+                        <div class='h2_conf'><h2><a href='",get_the_permalink(),"'>",the_title(),"</a></h2></div>
+                       <div class='author_conf'>",$author,"</div>
+
+                     <div class='date_conf'>",the_date('d/m/Y'),"</div>
+                      </div>
                       </article>
-                </div>
-              </div>
-              </li>
-          <?php
+                                                               </div>
+                                                             </div>
+                                                             </li>
+                            ";}
+                          else { echo " "; }
+                              }
+                              }
+
       endforeach;
       unset($post); // Détruit la référence sur le dernier élément
     ?></ul>
